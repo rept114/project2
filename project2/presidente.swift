@@ -8,15 +8,15 @@
 
 import Foundation
 
-class presidente {
+class Presidente {
     var nombre: String
     var sexenio: String
-    var sexo: String
+    var edad: String
     var Dpresidente:[DPresidente] = []
     
-    init(nombre:String, sexenio:String, sexo:String) {
+    init(nombre:String, sexenio:String, edad:String) {
         self.nombre = nombre
         self.sexenio = sexenio
-        self.sexo = sexo
+        self.edad = edad
     }
 }

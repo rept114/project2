@@ -14,7 +14,7 @@ class PresidenteController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        presidente.append(presidente(nombre: "El Congo", sexo: "Maria Venegas", sexenio: "80's"))
+        presidente.append(Presidente(nombre: "Enrique Peña Nieto", sexenio: "2012 - 2018", edad: "56 años"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,11 +23,11 @@ class PresidenteController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return presidente.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        return celda!
     }
     
 
