@@ -12,8 +12,6 @@ class Presidente {
     var nombre: String
     var sexenio: String
     var edad: String
-    var Dpresidente:[DPresidente] = []
-    
     init(nombre:String, sexenio:String, edad:String) {
         self.nombre = nombre
         self.sexenio = sexenio

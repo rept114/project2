@@ -1,27 +1,26 @@
-//
-//  view2.swift
-//  project2
-//
-//  Created by Alumno on 10/3/22.
-//  Copyright © 2022 Alumno. All rights reserved.
-//
+
 
 import Foundation
-class DetallesPresidenteController: UIViewController, UITablleViewDelegate, UITableViewDataSource {
+import UIKit
+
+class DetallesPresidenteController : UIViewController {
+    
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblBiografia: UILabel!
+    
+    var presidente: Presidente?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-      
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        
+        self.title = "Biografia"
+        
+        if presidente != nil {
+            self.title = presidente?.nombre
+          //  lblDirector.text = presidente?.director
 
+            
+        }
+    }
 }
 
-class DPresidente {
-    
-}
