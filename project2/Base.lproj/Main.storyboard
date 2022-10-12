@@ -14,7 +14,7 @@
         <!--Biografía-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DetallesPresidenteController" customModule="project2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,8 +33,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="Ixj-Fp-Oq3"/>
-                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="LLb-y0-e3y"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gTZ-C7-6Uq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U3M-QY-x6M"/>
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-Bc-foI">
@@ -91,16 +91,16 @@
         <!--Presidentes-->
         <scene sceneID="AAu-JD-jx5">
             <objects>
-                <viewController id="Rz8-Zt-7et" sceneMemberID="viewController">
+                <viewController id="Rz8-Zt-7et" customClass="PresidenteController" customModule="project2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zpE-Wf-OM8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-sF-8QD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-sF-8QD" userLabel="TvPresidente">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="169" id="Mgw-Ki-pbG" customClass="CeldaPresidenteController" customModule="project2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaPresidente" rowHeight="169" id="Mgw-Ki-pbG" customClass="CeldaPresidenteController" customModule="project2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mgw-Ki-pbG" id="FqG-5k-7Tm">
@@ -154,8 +154,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="zpE-Wf-OM8" id="TyP-Zn-PeH"/>
-                                    <outlet property="delegate" destination="zpE-Wf-OM8" id="UgK-n8-Cek"/>
+                                    <outlet property="dataSource" destination="Rz8-Zt-7et" id="6dy-7H-nF7"/>
+                                    <outlet property="delegate" destination="Rz8-Zt-7et" id="IDp-CT-p9O"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -169,6 +169,9 @@
                         <viewLayoutGuide key="safeArea" id="u8R-CS-C0t"/>
                     </view>
                     <navigationItem key="navigationItem" title="Presidentes" id="21a-ve-TPb"/>
+                    <connections>
+                        <outlet property="TvPresidente" destination="c7F-sF-8QD" id="XGV-cc-QT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvs-nM-7W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
