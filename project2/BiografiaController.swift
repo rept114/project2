@@ -16,10 +16,10 @@ class BiografiaController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        biografia.append(Biografia(Personaje: "Erik"))
-        biografia.append(Biografia(Personaje: "Erik"))
-        biografia.append(Biografia(Personaje: "Erik"))
-        biografia.append(Biografia(Personaje: "Erik"))
+        biografia.append(Biografia(Biografia: "Erik"))
+        biografia.append(Biografia(Biografia: "Erik"))
+        biografia.append(Biografia(Biografia: "Erik"))
+        biografia.append(Biografia(Biografia: "Erik"))
     }
     
     
@@ -35,7 +35,7 @@ class BiografiaController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaBiografia") as! CeldaBiografiaController
-        celda.lblPersonaje.text = biografia[indexPath.row].Biografia
+        celda.lblBiografia.text = biografia[indexPath.row].Biografia
         return celda
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
