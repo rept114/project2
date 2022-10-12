@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nih-du-9Q3">
-                                <rect key="frame" x="0.0" y="383.33333333333326" width="375" height="428.66666666666674"/>
+                                <rect key="frame" x="0.0" y="341.66666666666674" width="375" height="470.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="61" id="Ldd-1f-rSf" customClass="CeldaBiografiaController" customModule="project2" customModuleProvider="target">
@@ -30,24 +30,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="lblBiografia" destination="ZhA-YS-Cu6" id="O5i-uU-xEw"/>
-                                            <outlet property="lblName" destination="WpF-N4-SHV" id="Aba-sy-4RZ"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="Ixj-Fp-Oq3"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="LLb-y0-e3y"/>
+                                </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-Bc-foI">
                                 <rect key="frame" x="60" y="108.00000000000001" width="255" height="163.33333333333337"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhA-YS-Cu6">
-                                <rect key="frame" x="20" y="333" width="335" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-N4-SHV">
-                                <rect key="frame" x="20" y="291.33333333333331" width="335" height="21"/>
+                                <rect key="frame" x="20" y="291.33333333333331" width="335" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,23 +53,19 @@
                             <constraint firstItem="nih-du-9Q3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8wg-5l-O6U"/>
                             <constraint firstItem="jVC-Bc-foI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" constant="1" id="E8Y-1r-XyF"/>
                             <constraint firstItem="jVC-Bc-foI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EPM-x6-UBF"/>
-                            <constraint firstItem="WpF-N4-SHV" firstAttribute="top" secondItem="jVC-Bc-foI" secondAttribute="bottom" constant="20" id="J4l-CC-hYZ"/>
+                            <constraint firstItem="ZhA-YS-Cu6" firstAttribute="top" secondItem="jVC-Bc-foI" secondAttribute="bottom" constant="20" id="M0M-Xf-9h8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhA-YS-Cu6" secondAttribute="trailing" constant="20" id="N2K-E1-GMR"/>
                             <constraint firstAttribute="trailing" secondItem="jVC-Bc-foI" secondAttribute="trailing" constant="60" id="Sfd-ry-y13"/>
-                            <constraint firstItem="WpF-N4-SHV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wk5-6P-xuH"/>
                             <constraint firstAttribute="bottom" secondItem="nih-du-9Q3" secondAttribute="bottom" id="csx-8t-pR8"/>
-                            <constraint firstItem="ZhA-YS-Cu6" firstAttribute="top" secondItem="WpF-N4-SHV" secondAttribute="bottom" constant="20" id="gO9-VD-QHQ"/>
                             <constraint firstItem="nih-du-9Q3" firstAttribute="top" secondItem="ZhA-YS-Cu6" secondAttribute="bottom" constant="30" id="hcu-Xp-vAx"/>
                             <constraint firstItem="ZhA-YS-Cu6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nFC-WJ-cXW"/>
                             <constraint firstItem="nih-du-9Q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nGr-ia-JmF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WpF-N4-SHV" secondAttribute="trailing" constant="20" id="trf-tG-fem"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Biografía" id="yRJ-5M-AWT"/>
                     <connections>
-                        <outlet property="lblBiografia" destination="ZhA-YS-Cu6" id="KU3-Hb-0c9"/>
-                        <outlet property="lblName" destination="WpF-N4-SHV" id="p6E-hL-gdi"/>
+                        <outlet property="lblBiografia" destination="ZhA-YS-Cu6" id="Lla-94-c85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -163,6 +153,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zpE-Wf-OM8" id="TyP-Zn-PeH"/>
+                                    <outlet property="delegate" destination="zpE-Wf-OM8" id="UgK-n8-Cek"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
