@@ -17,6 +17,7 @@
 		3D0B3A9328F07C5400EEBCDA /* Biografia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B3A9228F07C5400EEBCDA /* Biografia.swift */; };
 		3D0B3A9528F07CD300EEBCDA /* CeldaBiografiaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B3A9428F07CD300EEBCDA /* CeldaBiografiaController.swift */; };
 		3D0B3A9728F07DD200EEBCDA /* BiografiaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0B3A9628F07DD200EEBCDA /* BiografiaController.swift */; };
+		3D24C70328FDA0A900D1DD4F /* Dbiografia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24C70228FDA0A900D1DD4F /* Dbiografia.swift */; };
 		3DD4B2E628EDD5E500070FE8 /* CeldaPresidenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD4B2E528EDD5E500070FE8 /* CeldaPresidenteController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3D0B3A9228F07C5400EEBCDA /* Biografia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biografia.swift; sourceTree = "<group>"; };
 		3D0B3A9428F07CD300EEBCDA /* CeldaBiografiaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaBiografiaController.swift; sourceTree = "<group>"; };
 		3D0B3A9628F07DD200EEBCDA /* BiografiaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiografiaController.swift; sourceTree = "<group>"; };
+		3D24C70228FDA0A900D1DD4F /* Dbiografia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dbiografia.swift; sourceTree = "<group>"; };
 		3DD4B2E528EDD5E500070FE8 /* CeldaPresidenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPresidenteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			children = (
 				3D0656E128EB2FAC001FBE0D /* presidente.swift */,
 				3D0B3A9228F07C5400EEBCDA /* Biografia.swift */,
+				3D24C70228FDA0A900D1DD4F /* Dbiografia.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				3D0B3A9528F07CD300EEBCDA /* CeldaBiografiaController.swift in Sources */,
 				3D0656D228EB2979001FBE0D /* PresidenteController.swift in Sources */,
 				3D0656D028EB2979001FBE0D /* AppDelegate.swift in Sources */,
+				3D24C70328FDA0A900D1DD4F /* Dbiografia.swift in Sources */,
 				3D0656E228EB2FAC001FBE0D /* presidente.swift in Sources */,
 				3D0B3A9728F07DD200EEBCDA /* BiografiaController.swift in Sources */,
 				3D0656E428EB331A001FBE0D /* DetallesPresidenteController.swift in Sources */,

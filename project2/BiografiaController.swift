@@ -35,7 +35,6 @@ class BiografiaController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaBiografia") as! CeldaBiografiaController
-        celda.lblBiografia.text = biografia[indexPath.row].Biografia
         return celda
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,3 +44,4 @@ class BiografiaController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
 }
+

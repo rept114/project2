@@ -12,9 +12,11 @@ class Presidente {
     var nombre: String
     var sexenio: String
     var edad: String
-    init(nombre:String, sexenio:String, edad:String) {
+    var descripcion: String
+    init(nombre:String, sexenio:String, edad:String, descripcion: String) {
         self.nombre = nombre
         self.sexenio = sexenio
         self.edad = edad
+        self.descripcion = descripcion
     }
 }
