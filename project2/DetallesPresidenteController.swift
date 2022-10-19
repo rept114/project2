@@ -7,6 +7,7 @@ class DetallesPresidenteController : UIViewController, UITableViewDelegate, UITa
     var presidente: Presidente?
     var DBiografia : [Dbiografia] = []
     
+    @IBOutlet weak var lblImageview2: UIImageView!
     @IBOutlet weak var lblBiografia: UILabel!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DBiografia.count
@@ -30,8 +31,9 @@ class DetallesPresidenteController : UIViewController, UITableViewDelegate, UITa
         if presidente != nil {
             self.title = presidente?.nombre
             lblBiografia.text = presidente?.descripcion
+            lblImageview2.image = UIImage(named:presidente!.fotito)
+            
         }
-        
        
           //  lblDirector.text = presidente?.director
 

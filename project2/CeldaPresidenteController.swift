@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class CeldaPresidenteController: UITableViewCell {
  
+    @IBOutlet weak var lblImageview: UIImageView!
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblEdad: UILabel!
     @IBOutlet weak var lblSexenio: UILabel!
