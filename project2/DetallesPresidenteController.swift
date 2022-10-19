@@ -25,7 +25,11 @@ class DetallesPresidenteController : UIViewController, UITableViewDelegate, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DBiografia.append(Dbiografia(puestos: "Lazaro Cardenas"))
+        DBiografia.append(Dbiografia(puestos: "Secretario de hacienda"))
+        DBiografia.append(Dbiografia(puestos: "Gobernador"))
+        DBiografia.append(Dbiografia(puestos: "Presidente"))
+        DBiografia.append(Dbiografia(puestos: "Interno"))
+        DBiografia.append(Dbiografia(puestos: "Abogado"))
         self.title = "Detalles de pelicula"
         
         if presidente != nil {
